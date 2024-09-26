@@ -1,0 +1,695 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* Default code Starts here */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-wrap: pretty;
+    /* border: 1px solid red; */
+}
+
+body {
+    line-height: 1.1;
+    -webkit-font-smoothing: antialiased;
+    background-color: #fdfafa;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6,
+p {
+    text-wrap: balance;
+}
+
+input,
+textarea,
+button {
+    font-family: inherit
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+:root {
+    --primaryColor: #f1e8de;
+    --secondaryColor: #121213;
+    --darkColor: #0067b8;
+    --lightColor: #249cf8;
+    --regularFont: 1.6rem;
+    --headingFont: 54px;
+    --ffPrimary: "Hind Siliguri", sans-serif;
+    --ffSecondary: "Merienda", cursive;
+}
+
+/* Default code Ends here */
+
+/* project standard classes Starts */
+
+.align {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+.componentSpacing {
+    padding: 2rem 0;
+}
+
+/* project standard classes Ends */
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.grid-6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+
+/* :::PARENT CONTAINER CODE Starts here::: */
+header {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+}
+
+/* :::PARENT CONTAINER CODE Ends here::: */
+.dflex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.deflex-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* :::CUSTOUM CLASS STARTS HERE::: */
+
+.logo img {
+    margin-top: 6px;
+    max-width: none;
+    width: 125px;
+    height: auto;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    margin-left: 7rem;
+}
+
+/* .links {
+width: 60rem;   
+} */
+
+.links {
+
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    font-size: 1.3rem;
+    /* padding: 0rem 2rem; */
+
+}
+
+/* .links li{
+    justify-content: space-around;
+    
+} */
+.links a {
+    text-decoration: none;
+    color: black;
+}
+
+.links2 {
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    padding-left: 30rem;
+    justify-content: space-evenly;
+}
+
+.right {
+    padding-right: 7rem;
+
+}
+
+.links2 a {
+    text-decoration: none;
+    color: black;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.links2 a:hover {
+    text-decoration: underline;
+}
+
+.bluebutton {
+    background-color: #0067b8;
+    color: white;
+
+}
+
+.bluebutton a {
+    background-color: #0067b8;
+    color: white;
+}
+
+.yellow {
+    background-color: #ffb900;
+    color: black;
+}
+
+.removedot {
+    list-style-type: none;
+
+}
+
+.jumbotron {
+    padding: 2rem 0 rem 5rem 0rem;
+}
+
+.jumbotron button {
+    margin-bottom: 2rem;
+    border: none;
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+}
+
+.jumbotron a {
+    text-decoration: none;
+}
+
+.jumbotron h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.jumbotron p {
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+    /* padding-left: 1rem; */
+    width: 50rem;
+    line-height: 2.5rem;
+
+}
+
+.jumbotron {
+    background-image: url(assets/images/meet-\ jumbo-ms.avif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 21rem 10rem;
+
+
+}
+
+.exploreLink {
+    padding: 0 25rem;
+}
+
+.iconlink a {
+    color: #0067b8;
+}
+
+.icon {
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.icon i {
+    font-size: 22px;
+}
+
+.iconlink {
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: small;
+    list-style-type: none;
+
+}
+
+.featuresCardHeader img {
+    margin-bottom: 2.5rem;
+    align-items: center;
+}
+
+.featuresCardBody h3 {
+    /* background-color: #ffb900; */
+    margin-bottom: 1rem;
+    font-size: 2.3rem;
+    padding: 0rem 2rem;
+}
+
+.featuresCardBody p {
+    /* background-color: #249cf8; */
+    margin-bottom: 3.5rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding: 0 2rem;
+}
+
+.featuresCardBody button {
+    margin-bottom: 4rem;
+    border: none;
+    padding: 1rem;
+    margin-left: 3rem;
+    font-size: 12px;
+    padding: 1.2rem;
+    border-radius: 2px;
+}
+
+.featuresCard1 button {
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+}
+
+
+.button a {
+    margin-left: 3rem;
+}
+
+.button a {
+    margin-left: 3rem;
+    font-size: 1.5rem;
+    color: #0067b8;
+}
+
+.featuresCardBody a {
+    text-decoration: none;
+}
+
+.featuresCard4 p {
+    margin-bottom: 22.5rem;
+}
+
+.featuresCard3 p {
+    margin-bottom: 22.5rem;
+}
+
+.featuresCard2 p {
+    margin-bottom: 12.3rem;
+}
+
+.featuresCard1 p {
+    margin-bottom: 5rem;
+}
+
+.featuresBody {
+    gap: 2.5rem;
+    padding: 0rem;
+}
+
+.featuresCard1 {
+    background-color: #ffffff;
+    box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px,
+        rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px,
+        rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+
+}
+
+.featuresCard2 {
+    background-color: #ffffff;
+    box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px,
+        rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px,
+        rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+
+
+
+}
+
+.featuresCard3 {
+    background-color: #ffffff;
+    box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px,
+        rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px,
+        rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+
+}
+
+.featuresCard4 {
+    background-color: #ffffff;
+    box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px,
+        rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px,
+        rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+
+}
+
+.businessBody {
+    gap: 2.5rem;
+    padding: 2rem;
+}
+
+.businessCard1 {
+    background-color: #ffffff;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.businessCard2 {
+    background-color: #ffffff;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.businessCard3 {
+    background-color: #ffffff;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.businessCard4 {
+    background-color: #ffffff;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+
+
+.designedBody {
+    background-image: url(assets/images/designed_bg.avif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 21rem 11rem;
+    width: 100%;
+    height: auto;
+}
+
+.designedText h3 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.designedText p {
+    margin-bottom: 2rem;
+    font-size: small;
+}
+
+.designedText button {
+    margin-bottom: 1rem;
+    border: none;
+    padding: .5rem;
+}
+
+.designedText a {
+    text-decoration: none;
+}
+
+.businessTitle h3 {
+    margin-bottom: .5rem;
+    font-size: 2.5rem;
+}
+
+.businessHeader img {
+    margin-bottom: 3rem;
+    align-items: center;
+
+}
+
+.businessBody h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.businessBody p {
+    font-size: small;
+    margin-bottom: 2rem;
+}
+
+.businessBody button {
+    margin-bottom: 1rem;
+    border: none;
+    padding: .5rem;
+}
+
+.businessBody a {
+    text-decoration: none;
+}
+
+.businessCard2 img {
+    margin-bottom: 2rem;
+}
+
+.businessCard2 button {
+    margin-bottom: .3rem;
+}
+
+.businessCard2 h3 {
+    margin-bottom: 0.5rem;
+}
+
+.businessCard2 p {
+    margin-bottom: 5rem;
+}
+
+.businessCard3 p {
+    margin-bottom: 6rem;
+}
+
+.businessCard1 p {
+    margin-bottom: 6rem;
+}
+
+.socialMediaLink {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 14rem;
+    padding-left: 1rem;
+}
+
+.socialMediaLink h5 {
+    font-size: 1.5rem;
+    font-weight: 100;
+    padding-left: 6.3rem;
+    margin-right: 2rem;
+}
+
+.resourcesBody {
+    padding: 0 6rem;
+}
+
+.socialMediaLink i {
+    margin-right: 1.5rem;
+    padding: 1rem;
+    font-size: 2.3rem;
+}
+
+.resourcesLink1 li :hover {
+    text-decoration: underline;
+    color: #000000;
+
+}
+
+.resourcesLink2 li :hover {
+    text-decoration: underline;
+    color: #000000;
+}
+
+.resourcesLink3 li :hover {
+    text-decoration: underline;
+    color: #000000;
+}
+
+.resourcesLink4 li :hover {
+    text-decoration: underline;
+    color: #000000;
+}
+
+.resourcesLink5 li :hover {
+    text-decoration: underline;
+    color: #000000;
+}
+
+.resourcesLink6 li :hover {
+    text-decoration: underline;
+    color: #000000;
+}
+
+.resourcesBody h5 {
+    margin-bottom: 1rem;
+    color: #616161;
+    font-size: 12px;
+}
+
+.resourcesBody li a {
+    font-size: 11px;
+}
+
+.resourcesLink1 li {
+    padding-top: 1rem;
+    padding-right: 0rem;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+}
+
+.resourcesLink2 li {
+    padding-top: 1rem;
+    padding-right: 0.5rem;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+}
+
+.resourcesLink3 li {
+    padding-top: 1rem;
+    padding-right: 0.5rem;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+}
+
+.resourcesLink4 li {
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+.resourcesLink5 li {
+    padding-top: 1rem;
+    padding-right: 0.5rem;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+}
+
+.resourcesLink6 li {
+    padding-top: 1rem;
+    padding-right: 0rem;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+}
+
+.resourcesBody a {
+    text-decoration: none;
+    font-size: xx-small;
+    color: #616161;
+}
+
+.contactLink1 li {
+    display: flex;
+    justify-content: left;
+}
+
+.contactLink1 {
+    display: flex;
+    justify-content: left;
+    list-style-type: none;
+    color: #616161;
+}
+
+.contactLink1 li {
+    padding-top: 0rem;
+    padding-right: 1rem;
+    padding-bottom: 0rem;
+    padding-left: 1rem;
+    font-size: 8px;
+    margin-bottom: 1rem;
+}
+
+.contactLink2 {
+    display: flex;
+    list-style-type: none;
+    color: #616161;
+}
+
+.contactLink2 li {
+    padding-top: 0rem;
+    padding-right: 1rem;
+    padding-bottom: 0rem;
+    padding-left: 1rem;
+    font-size: 10px;
+    margin-bottom: 1rem;
+}
+
+.contactLink2 li :hover {
+    text-decoration: underline;
+    color: #000000;
+}
+
+.contactLink1 i {
+    font-size: 2rem;
+}
+
+.contactLink1 li {
+    font-size: 10px;
+}
+
+.contactLink1 li :hover {
+    text-decoration: underline;
+
+}
+
+.contactBody a {
+    text-decoration: none;
+    color: #616161;
+}
+
+.contactBody {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    padding-left: 5.5rem;
+}
+
+/* :::CUSTOUM CLASS STARTS HERE::: */
+
+
+/* ::: HEADER CODE STARTS HERE ::: */
+/* :::HEADER CODE STARTS HERE::: */
